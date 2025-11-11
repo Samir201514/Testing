@@ -1,0 +1,60 @@
+Git Configurations:
+git config --global user.name "Samir201514"
+git config --global user.email "arafat.rahman3926@gmail.com"
+ 
+
+Setting SSH key:
+ssh-keygen -t rsa -f ~/.ssh/id_rsa <<< y
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+
+
+list:
+ls
+
+list(Hidden File):
+ls -a
+
+Status:
+git status
+
+From GitHub:
+git clone url
+git add .
+git commit -m "Comment"
+git push -u origin main
+git push
+
+
+From PC:
+cd ..
+mkdir FolderName
+cd FolderName/
+touch README.md
+touch NewFileName.extention
+echo "Write Anything" > NewFileName.extention
+git init
+git add .
+git commit -m "Comment"
+git remote add origin url
+git push -u origin main
+
+
+To create a New Branch:
+git branch (To Check)
+git branch -m main (to rename branch)
+git checkout BranchName (to Switch)
+git checkout -b BranchName (to create)
+git push -u origin BranchName
+git push origin --delete branch-name (to delete)
+
+Pull:
+git pull origin main
+
+Merging:
+git diff BranchName
+git merge BranchName
+
+
+
+
